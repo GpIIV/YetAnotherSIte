@@ -4,13 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Entity
-@SpringBootApplication
-public class YetAnotherSiteApplication {
-
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
@@ -38,7 +34,4 @@ public class YetAnotherSiteApplication {
         this.price = price;
     }
 
-    public static void main(String[] args) {
-        SpringApplication.run(YetAnotherSiteApplication.class, args);
-    }
 }
